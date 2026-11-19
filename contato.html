@@ -52,10 +52,7 @@
     <div id="success-note" class="success-note" style="display:none;">Obrigado! Recebemos sua solicitação e entraremos em contato em breve.</div>
     <div id="error-note" class="error-note" style="display:none;">Não foi possível enviar sua solicitação agora. Tente novamente em instantes ou fale conosco pelo telefone (11) 95357-3037.</div>
 
-    <form id="contact-form" class="contact-form" action="https://formsubmit.co/8e1d64d88fa597c817ee1729afecea73" method="POST">
-      <input type="hidden" name="_subject" value="Nova solicitação de orçamento — site Maná Eventos">
-      <input type="hidden" name="_template" value="table">
-      <input type="hidden" name="_captcha" value="false">
+    <form id="contact-form" class="contact-form" action="/api/contact" method="POST">
       <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
       <div class="form-row">
         <div class="field">
