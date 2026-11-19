@@ -50,8 +50,13 @@
     <h2>Solicite um Orçamento</h2>
 
     <div id="success-note" class="success-note" style="display:none;">Obrigado! Recebemos sua solicitação e entraremos em contato em breve.</div>
+    <div id="error-note" class="error-note" style="display:none;">Não foi possível enviar sua solicitação agora. Tente novamente em instantes ou fale conosco pelo telefone (11) 95357-3037.</div>
 
-    <form id="contact-form" class="contact-form">
+    <form id="contact-form" class="contact-form" action="https://formsubmit.co/contato@manaeventos.com.br" method="POST">
+      <input type="hidden" name="_subject" value="Nova solicitação de orçamento — site Maná Eventos">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
       <div class="form-row">
         <div class="field">
           <label for="nome">NOME COMPLETO *</label>
@@ -93,7 +98,7 @@
         <label for="mensagem">MENSAGEM</label>
         <textarea id="mensagem" name="mensagem" rows="4" placeholder="Conte-nos mais sobre seu evento..."></textarea>
       </div>
-      <button type="submit" class="btn btn-dark submit">ENVIAR SOLICITAÇÃO</button>
+      <button type="submit" class="btn btn-dark submit" id="contact-submit">ENVIAR SOLICITAÇÃO</button>
     </form>
   </div>
 

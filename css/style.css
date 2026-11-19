@@ -354,6 +354,7 @@ button { font-family: 'Archivo', sans-serif; }
 .contact-body h2 { font-family: 'Playfair Display', serif; font-size: 26px; margin: 0 0 30px; }
 
 .success-note { background: var(--sage-light); padding: 26px; border-left: 3px solid var(--terracotta); font-size: 15px; }
+.error-note { background: var(--tan); padding: 26px; border-left: 3px solid #b3261e; font-size: 15px; margin-bottom: 26px; }
 
 form.contact-form { display: flex; flex-direction: column; gap: 26px; }
 .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 26px; }
